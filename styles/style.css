@@ -148,6 +148,36 @@ header {
     margin-top: 77px;
 }
 
+.newItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+}
+
+.nameOfUs {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.specialityNew {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    background: #4760A2;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.about_us_new {
+    display: flex;
+    padding: 0px 140px 200px;
+    justify-content: center;
+}
+
 .about_us {
     display: flex;
     flex-direction: column;
