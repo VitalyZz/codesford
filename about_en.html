@@ -9,14 +9,14 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo.png" alt="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
         </div>
         <div class="listOfMenu">
             <ul class="menuUl">
-                <li><a href="main_en.html">Home</a></li>
-                <li><a href="main_en.html#about">About project</a></li>
-                <li><a href="main_en.html#team">Team</a></li>
-                <li><a href="main_en.html#contacts">Contacts</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Main page</a></li>
+                <li><a href="index.html#about"><i class="fas fa-project-diagram"></i> About project</a></li>
+                <li><a href="about_en.html"><i class="fas fa-user-friends"></i> Crew</a></li>
+                <li><a href="index.html#contacts"><i class="fas fa-globe-asia"></i> Contacts</a></li>
             </ul>
         </div>
         <div class="language">
@@ -24,7 +24,7 @@
             <!-- Begin -->
 
         <select class="vodiapicker">
-            <option value="en" data-thumbnail="img/icons/united_kingdom.ico">EN</option>
+            <option value="en" data-thumbnail="img/icons/united_kingdom.ico">En</option>
             <option value="ru" data-thumbnail="img/icons/russia.svg">Ру</option>
         </select>
     
@@ -38,7 +38,7 @@
             <!-- End -->
         </div>
     </header>
-    <section class="about_us" id="team" style="margin-top: 100px;">
+    <section class="about_us" id="team">
         <div class="item">
             <div class="wrapper_photo">
                 <img src="img/olegPhoto.png" alt="photo" class="personalPhoto">
@@ -66,6 +66,35 @@
             </div>
         </div>
     </section>
+    <footer id="contacts">
+        <div class="block_address">
+            <p class="address">Address</p>
+            <p class="about_address">59-69 Pearcedale Parade, Broadmeadows VIC 3047</p>
+        </div>
+        <div class="block_contacts">
+            <p class="contacts">Contacts</p>
+            <p class="email">Email: <span><a href="mailto:CodesFord2020@gmail.com">CodesFord2020@gmail.com</a></span></p>
+            <p class="joinUs">Join us on social networking sites:</p>
+            <div class="social_medias">
+                <a href="https://www.youtube.com/channel/UCAJdCHneL0v4Ad38UVaCjbg" target="_blank">
+                    <div class="youtube">
+                        <img src="img/icons/youtube1.svg" alt="youtube">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/CodesFord2020">
+                    <div class="facebook">
+                        <img src="img/icons/facebook1.svg" alt="facebook">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <p class="menu_name">Menu</p>
+            <a href="index.html"><i class="fas fa-home"></i> Main page</a>
+            <a href="index.html#about"><i class="fas fa-project-diagram"></i> About project</a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/6bf4550111.js" crossorigin="anonymous"></script>
     <script
   src="https://code.jquery.com/jquery-3.5.0.min.js"
   integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
