@@ -25,15 +25,6 @@ $('#a li').click(function(){
   //console.log(value);
 });
 
-// $(".btn-select").click(function(){
-//         if ($(".b").css("display") == 'none') {
-//           document.querySelector('.glll').style.transform = 'rotate(-90deg)';
-//         } else {
-//           document.querySelector('.glll').style.transform = 'rotate(90deg)';
-//         }
-//         $(".b").toggle();
-// });
-
 $(".btn-select").click(function() {
   if ($(".b").css("display") == 'none') {
     document.querySelector('.glll').style.transform = 'rotate(-90deg)';
@@ -54,25 +45,15 @@ $(document).on('click', function(e) {
   e.stopPropagation();
 });
 
-// $(document).mouseup(function (e) {
-//   var container = $(".b");
-//   if (container.has(e.target).length === 0){
-//       container.hide();
-//   }
-//   document.querySelector('.glll').style.transform = 'rotate(90deg)';
-// });
-
 //check local storage for the lang
 var sessionLang = localStorage.getItem('lang');
 if (sessionLang){
-  //find an item with value of sessionLang
   var langIndex = langArray.indexOf(sessionLang);
   $('.btn-select').html(langArray[langIndex]);
   $('.btn-select').attr('value', sessionLang);
 } else {
    var langIndex = langArray.indexOf('ch');
   $('.btn-select').html(langArray[langIndex]);
-  //$('.btn-select').attr('value', 'en');
 }
 let changeElement = document.querySelectorAll('.b #a li');
 let elFirst = changeElement[0].children[0].textContent;
@@ -80,47 +61,60 @@ let elSecond = changeElement[1].children[0].textContent;
 let link = '';
 let link2 = '';
 let pathName = document.location.pathname;
-console.log(pathName.indexOf("about"));
+// console.log(pathName.indexOf("team") !== -1);
 if (elFirst == 'Ру') {
   link = document.createElement('a');
-  if (pathName.indexOf("about") === 1) {
-    link.href = 'about_ru.html';
+  if (pathName.indexOf("team") !== -1) {
+    link.href = 'team';
   } else {
-    link.href = 'main_ru.html';
+    link.href = '/ru';
   }
   link.appendChild(changeElement[0]);
 
   link2 = document.createElement('a');
-  if (pathName.indexOf("about") === 1) {
-    link2.href = 'about_en.html';
+  if (pathName.indexOf("team") !== -1) {
+    link2.href = '/team';
   } else {
-    link2.href = 'index.html';
+    link2.href = '/';
   }
   link2.appendChild(changeElement[1]);
 }
 else {
   link = document.createElement('a');
-  if (pathName.indexOf("about")  === 1) {
-    link.href = 'about_en.html';
+  if (pathName.indexOf("team")  !== -1) {
+    link.href = 'team';
   } else {
-    link.href = 'index.html';
+    link.href = '/';
   }
   link.appendChild(changeElement[0]);
 
   link2 = document.createElement('a');
-  if (pathName.indexOf("about")  === 1) {
-    link2.href = 'about_ru.html';
+  if (pathName.indexOf("team")  !== -1) {
+    link2.href = 'ru/team';
   } else {
-    link2.href = 'main_ru.html';
+    link2.href = 'ru';
   }
   link2.appendChild(changeElement[1]);
 }
 document.querySelector('.b #a').appendChild(link)
 document.querySelector('.b #a').appendChild(link2)
 
-// var regexp = /limit=([^&]+)/i;
-//     var GetValue = '';
-//     if (!!regexp.exec(document.location.search)) 
-//         GetValue = regexp.exec(document.location.search)[1];
-$('.btn-select').append('<img src="img/icons/keyboard.svg" alt="youtube" class="glll">')
-console.log(document.location.pathname);
+$('.btn-select').append('<img src="/img/icons/keyboard.svg" alt="youtube" class="glll">')
+
+
+document.querySelector('.wrapper-burder-menu').addEventListener('click', function() {
+  // document.querySelector('.burger-menu-display').style.display = 'block';
+  document.querySelector('.burger-menu-display').style.left = 0;
+});
+
+document.querySelector('.wrapper-close').addEventListener('click', function() {
+  // document.querySelector('.burger-menu-display').style.display = 'none';
+  document.querySelector('.burger-menu-display').style.left = "100%";
+});
+
+document.querySelector('.burger-menu-display').addEventListener('click', function() {
+  if (e.target.tagName === 'A') {
+    // document.querySelector('.burger-menu-display').style.display = 'none';
+    document.querySelector('.burger-menu-display').style.left = "100%";
+  }
+});

@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165444829-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165444829-1');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(62535670, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/62535670" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>CodesFord</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <a href="/"><img src="img/logo.png" alt="logo"></a>
         </div>
         <div class="listOfMenu">
             <ul class="menuUl">
-                <li><a href="index.html"><i class="fas fa-home"></i> Main page</a></li>
+                <li><a href="/"><i class="fas fa-home"></i> Main page</a></li>
                 <li><a href="#about"><i class="fas fa-project-diagram"></i> About project</a></li>
-                <li><a href="about_en.html"><i class="fas fa-user-friends"></i> Crew</a></li>
+                <li><a href="team"><i class="fas fa-user-friends"></i> Crew</a></li>
                 <li><a href="#contacts"><i class="fas fa-globe-asia"></i> Contacts</a></li>
             </ul>
         </div>
@@ -24,8 +51,8 @@
             <!-- Begin -->
 
         <select class="vodiapicker">
-            <option value="en" data-thumbnail="img/icons/united_kingdom.ico">En</option>
-            <option value="ru" data-thumbnail="img/icons/russia.svg">Ру</option>
+            <option value="en" data-thumbnail="/img/icons/united-kingdom.svg">En</option>
+            <option value="ru" data-thumbnail="/img/icons/russia.svg">Ру</option>
         </select>
     
         <div class="lang-select">
@@ -35,15 +62,29 @@
             </div>
         </div>
 
+        <div class="wrapper-burder-menu">
+            <div class="burger-line"></div>
+        </div>
+        <div class="burger-menu-display">
+            <div class="burger-link"><a href="/" class="burger-link-a"><i class="fas fa-home"></i> Main page</a></div>
+            <div class="burger-link"><a href="#about" class="burger-link-a"><i class="fas fa-project-diagram"></i> About project</a></div>
+            <div class="burger-link"><a href="team" class="burger-link-a"><i class="fas fa-user-friends"></i> Crew</a></div>
+            <div class="burger-link"><a href="#contacts" class="burger-link-a"><i class="fas fa-globe-asia"></i> Contacts</a></div>
+            <div class="wrapper-close">
+                <div class="close-burger-menu-1"></div>
+                <div class="close-burger-menu-2"></div>
+            </div>
+        </div>
             <!-- End -->
         </div>
     </header>
     <section class="main_page">
-        <h1 class="main_text">It is the best time to learn Coding from the Scratch!</h1>
+        <h1 class="main_text">It is the best time to learn the Coding from the Scratch!</h1>
         <a href="#about" class="forward">Get started!</a>
         <div class="shadow"></div>
     </section>
     <section class="about_project" id="about">
+        <div class="container">
         <div class="headerAboutProject">About project</div>
         <h3 class="header_problem">Pain of potential users</h3>
         <ul class="problem_ul">
@@ -53,13 +94,13 @@
         </ul>
 
         <h3 class="header_solve">How we will solve the problems of these users</h3>
-        <ul class="solve_ul">
-            <li>We will not specialize in everything, but we will train just in development (HTML5, CSS3, Front-end, Back-end, QA testing, Team Leadership, IT Architecture, etc.);</li>
-            <li>We plan to train not only with the help of texts and videos, but also with the help of homework, tasks, projects;</li>
-            <li>It will be possible to pass tests and exams on our web site and to get a serious certificate with a serial number or you can prepare for third-party certification;</li>
-            <li>Successful students will be able to take practice on our startup, and they will also be able to get recommendations on paper or in electronic form;</li>
-            <li>We will help in finding ads about employment, giving advice on how to write your CV with a portfolio, how to find jobs with a high salary, and how to prepare for an interview.</li>
-        </ul>
+        <div class="solve_ul">
+            <div>We will not specialize in everything, but we will train just in development (HTML5, CSS3, Front-end, Back-end, QA testing, Team Leadership, IT Architecture, etc.);</div>
+            <div>We plan to train not only with the help of texts and videos, but also with the help of homework, tasks, projects;</div>
+            <div>It will be possible to pass tests and exams on our web site and to get a serious certificate with a serial number or you can prepare for third-party certification;</div>
+            <div>Successful students will be able to take practice on our startup, and they will also be able to get recommendations on paper or in electronic form;</div>
+            <div>We will help in finding ads about employment, giving advice on how to write your CV with a portfolio, how to find jobs with a high salary, and how to prepare for an interview.</div>
+        </div>
 
         <div class="onOutProject">On our project you will be able to set the desired price and terms of training.</div>
 
@@ -70,26 +111,39 @@
         <button class="begin">Start!</button>
 
         <div class="teachText">If you want not to learn, but to teach other people, then we can place your course on our marketplace.</div>
+        <d/iv>
+    </section>
+    <section class="business_model">
+        <div class="container">
+        <div class="business_model_text">
+            Our startup is at the junction of three technologies: EdTech, GameTech and HRTech. Despite the fact that a lot of useful elements will be free on our web site and inside in our mobile apps, our team plans to develop a commercial project. In this regard, we will be grateful to users for feedback and for orders for paid products, for example, Initial Professional Orientation, training interactive courses, assistance in finding your future job, and much more that you need.
+        </div>
+        <div class="business_model_img">
+            <img src="/img/business_model.svg" alt="" class="business_model_photo">
+        </div>
+        </div>
     </section>
     <section class="about_us_new" id="team">
+        <div class="container">
         <div class="headerAboutUs">Crew</div>
         <div class="involvedText">
             Our team members are involved in training and in IT. Startup participants studied at good institutes and have experience in full stack development.
         </div>
         <div class="wrapperItems">
             <div class="newItem">
-                <a href="about_en.html"><img src="img/olegPhoto.png" alt="photo" class="personalPhoto"></a>
-                <a href="about_en.html"><p class="nameOfUs">Oleg Gribanov</p></a>
-                <a href="about_en.html"><div class="specialityNew">Trainee IT Specialist</div></a>
+                <a href="team"><img src="/img/olegPhoto.png" alt="photo" class="personalPhoto"></a>
+                <a href="team"><p class="nameOfUs">Oleg Gribanov</p></a>
+                <a href="team"><div class="specialityNew">Trainee IT Specialist</div></a>
             </div>
             <div class="newItem rightItem">
-                <a href="about_en.html"><img src="img/vitalyPhoto.jpg" alt="photo" class="personalPhoto"></a>
-                <a href="about_en.html"><p class="nameOfUs">Vitaly Garshin</p></a>
-                <a href="about_en.html"><div class="specialityNew">Developer</div></a>
+                <a href="team"><img src="/img/vitalyPhoto.jpg" alt="photo" class="personalPhoto"></a>
+                <a href="team"><p class="nameOfUs">Vitaly Garshin</p></a>
+                <a href="team"><div class="specialityNew">Developer</div></a>
             </div>
         </div>
         <div class="teamOpenText">
             Despite the fact that we can do everything we need, our team is open to new talents, since together we can move forward much faster! Please join a fast-growing startup!
+        </div>
         </div>
     </section>
     <footer id="contacts">
@@ -104,21 +158,26 @@
             <div class="social_medias">
                 <a href="https://www.youtube.com/channel/UCAJdCHneL0v4Ad38UVaCjbg" target="_blank">
                     <div class="youtube">
-                        <img src="img/icons/youtube1.svg" alt="youtube">
+                        <img src="/img/icons/youtube1.svg" alt="youtube">
                     </div>
                 </a>
                 <a href="https://www.facebook.com/CodesFord2020">
                     <div class="facebook">
-                        <img src="img/icons/facebook1.svg" alt="facebook">
+                        <img src="/img/icons/facebook1.svg" alt="facebook">
+                    </div>
+                </a>
+                <a href="https://t.me/CodesFord">
+                    <div class="telegram">
+                        <img src="/img/icons/telegram.svg" alt="facebook">
                     </div>
                 </a>
             </div>
         </div>
         <div class="menu">
             <p class="menu_name">Menu</p>
-            <a href="index.html"><i class="fas fa-home"></i> Main page</a>
+            <a href="/"><i class="fas fa-home"></i> Main page</a>
             <a href="#about"><i class="fas fa-project-diagram"></i> About project</a>
-            <a href="about_en.html"><i class="fas fa-user-friends"></i> Crew</a>
+            <a href="team"><i class="fas fa-user-friends"></i> Crew</a>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/6bf4550111.js" crossorigin="anonymous"></script>
@@ -126,6 +185,6 @@
   src="https://code.jquery.com/jquery-3.5.0.min.js"
   integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
   crossorigin="anonymous"></script>
-  <script src="scripts/script.js"></script>
+  <script src="/scripts/script.js"></script>
 </body>
 </html>

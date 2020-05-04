@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165444829-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165444829-1');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(62535670, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/62535670" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>CodesFord</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="main_ru.html"><img src="img/logo.png" alt="logo"></a>
+            <a href="ru"><img src="/img/logo.png" alt="logo"></a>
         </div>
         <div class="listOfMenu">
             <ul class="menuUl">
-                <li><a href="main_ru.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="ru"><i class="fas fa-home"></i> Главная</a></li>
                 <li><a href="#about"><i class="fas fa-project-diagram"></i> О проекте</a></li>
-                <li><a href="about_ru.html"><i class="fas fa-user-friends"></i> Команда</a></li>
+                <li><a href="ru/team"><i class="fas fa-user-friends"></i> Команда</a></li>
                 <li><a href="#contacts"><i class="fas fa-globe-asia"></i> Контакты</a></li>
             </ul>
         </div>
@@ -24,8 +50,8 @@
             <!-- Begin -->
 
         <select class="vodiapicker">
-            <option value="ru" data-thumbnail="img/icons/russia.svg">Ру</option>
-            <option value="en" data-thumbnail="img/icons/united_kingdom.ico">En</option>
+            <option value="ru" data-thumbnail="/img/icons/russia.svg">Ру</option>
+            <option value="en" data-thumbnail="/img/icons/united_kingdom.ico">En</option>
         </select>
     
         <div class="lang-select">
@@ -69,10 +95,16 @@
         <p class="text_about_project">
             CodesFord - это образовательно-игровой проект, на котором можно изучить технологии, чтобы найти работу разработчика. Вы давно мечтали получить образование на уровне Оксфорда?!
         </p>
-        <h2 class="begin_to_learn">Начните учиться в Фоксфорде!‌</h2>
+        <h2 class="begin_to_learn">Начните учиться в Кодсфорде!‌</h2>
         <button class="begin">Начать!</button>
 
         <div class="teachText">Если вы хотите не учиться, а учить других людей, то мы сможем разместить ваш курс на нашем маркетплейсе.</div>
+    </section>
+    <section class="business_model">
+        <div class="business_model_text">
+            Наш стартап стоит на стыке трёх технологий: EdTech, GameTech и HRTech. Не смотря на то, что многое на нашем сайте будет бесплатным, наша команда планирует разработку коммерческого проекта. В связи с этим, мы будем признательны пользователям за обратную связь и за заказы платных продуктов, например, начальная профессиональная ориентация, обучающие игровые курсы, помощь в трудоустройстве, а также многое другое, что вам нужно.
+        </div>
+        <img src="" alt="" class="business_model_img">
     </section>
     <section class="about_us_new" id="team">
         <div class="headerAboutUs">Команда</div>
@@ -81,14 +113,14 @@
         </div>
         <div class="wrapperItems">
         <div class="newItem">
-            <a href="about_ru.html"><img src="img/olegPhoto.png" alt="photo" class="personalPhoto"></a>
-            <a href="about_ru.html"><p class="nameOfUs">Олег Грибанов</p></a>
-            <a href="about_ru.html"><div class="specialityNew">Руководитель проекта</div></a>
+            <a href="ru/team"><img src="/img/olegPhoto.png" alt="photo" class="personalPhoto"></a>
+            <a href="ru/team"><p class="nameOfUs">Олег Грибанов</p></a>
+            <a href="ru/team"><div class="specialityNew">Руководитель проекта</div></a>
         </div>
         <div class="newItem rightItem">
-            <a href="about_ru.html"><img src="img/vitalyPhoto.jpg" alt="photo" class="personalPhoto"></a>
-            <a href="about_ru.html"><p class="nameOfUs">Виталий Гаршин</p></a>
-            <a href="about_ru.html"><div class="specialityNew">Разработчик</div></a>
+            <a href="ru/team"><img src="/img/vitalyPhoto.jpg" alt="photo" class="personalPhoto"></a>
+            <a href="ru/team"><p class="nameOfUs">Виталий Гаршин</p></a>
+            <a href="ru/team"><div class="specialityNew">Разработчик</div></a>
         </div>
         </div>
         <div class="teamOpenText">
@@ -107,26 +139,31 @@
             <div class="social_medias">
                 <a href="https://www.youtube.com/channel/UCAJdCHneL0v4Ad38UVaCjbg" target="_blank">
                     <div class="youtube">
-                        <img src="img/icons/youtube1.svg" alt="youtube">
+                        <img src="/img/icons/youtube1.svg" alt="youtube">
                     </div>
                 </a>
                 <a href="https://vk.com/codesford">
                     <div class="vk">
-                        <img src="img/icons/vk1.svg" alt="vk">
+                        <img src="/img/icons/vk1.svg" alt="vk">
                     </div>
                 </a>
                 <a href="https://www.facebook.com/CodesFord2020">
                     <div class="facebook">
-                        <img src="img/icons/facebook1.svg" alt="facebook">
+                        <img src="/img/icons/facebook1.svg" alt="facebook">
+                    </div>
+                </a>
+                <a href="https://t.me/CodesFord">
+                    <div class="telegram">
+                        <img src="/img/icons/telegram.svg" alt="facebook">
                     </div>
                 </a>
             </div>
         </div>
         <div class="menu">
             <p class="menu_name">Меню</p>
-            <a href="main_ru.html"><i class="fas fa-home"></i> Главная</a>
-            <a href="main_ru.html#about"><i class="fas fa-project-diagram"></i> О проекте</a>
-            <a href="about_ru.html"><i class="fas fa-user-friends"></i> Команда</a>
+            <a href="ru"><i class="fas fa-home"></i> Главная</a>
+            <a href="ru#about"><i class="fas fa-project-diagram"></i> О проекте</a>
+            <a href="ru/team"><i class="fas fa-user-friends"></i> Команда</a>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/6bf4550111.js" crossorigin="anonymous"></script>
@@ -134,6 +171,6 @@
   src="https://code.jquery.com/jquery-3.5.0.min.js"
   integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
   crossorigin="anonymous"></script>
-  <script src="scripts/script.js"></script>
+  <script src="/scripts/script.js"></script>
 </body>
 </html>
