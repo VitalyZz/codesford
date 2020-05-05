@@ -30,28 +30,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>CodesFord</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="ru"><img src="/img/logo.png" alt="logo"></a>
+            <a href="/ru"><img src="/img/logo.png" alt="logo"></a>
         </div>
         <div class="listOfMenu">
             <ul class="menuUl">
-                <li><a href="ru"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="/ru"><i class="fas fa-home"></i> Главная</a></li>
                 <li><a href="#about"><i class="fas fa-project-diagram"></i> О проекте</a></li>
-                <li><a href="ru/team"><i class="fas fa-user-friends"></i> Команда</a></li>
+                <li><a href="/ru/team"><i class="fas fa-user-friends"></i> Команда</a></li>
                 <li><a href="#contacts"><i class="fas fa-globe-asia"></i> Контакты</a></li>
             </ul>
         </div>
         <div class="language">
 
-            <!-- Begin -->
+            <!--Begin-->
 
         <select class="vodiapicker">
             <option value="ru" data-thumbnail="/img/icons/russia.svg">Ру</option>
-            <option value="en" data-thumbnail="/img/icons/united_kingdom.ico">En</option>
+            <option value="en" data-thumbnail="/img/icons/united-kingdom.svg">En</option>
         </select>
     
         <div class="lang-select">
@@ -61,7 +62,21 @@
             </div>
         </div>
 
-            <!-- End -->
+        <div class="wrapper-burder-menu">
+            <div class="burger-line"></div>
+        </div>
+        <div class="burger-menu-display">
+            <div class="burger-link"><a href="/ru" class="burger-link-a"><i class="fas fa-home"></i> Главная</a></div>
+            <div class="burger-link"><a href="#about" class="burger-link-a"><i class="fas fa-project-diagram"></i> О проекте</a></div>
+            <div class="burger-link"><a href="/ru/team" class="burger-link-a"><i class="fas fa-user-friends"></i> Команда</a></div>
+            <div class="burger-link"><a href="#contacts" class="burger-link-a"><i class="fas fa-globe-asia"></i> Контакты</a></div>
+            <div class="wrapper-close">
+                <div class="close-burger-menu-1"></div>
+                <div class="close-burger-menu-2"></div>
+            </div>
+        </div>
+
+            <!--End-->
         </div>
     </header>
     <section class="main_page">
@@ -70,6 +85,7 @@
         <div class="shadow"></div>
     </section>
     <section class="about_project" id="about">
+        <div class="container">
         <div class="headerAboutProject">О проекте</div>
         <h3 class="header_problem">Проблемы потенциальных пользователей</h3>
         <ul class="problem_ul">
@@ -80,15 +96,15 @@
         </ul>
 
         <h3 class="header_solve">Как мы будем решать проблемы этих пользователей</h3>
-        <ul class="solve_ul">
-            <li>Мы будем специализироваться не на всём подряд, а мы будем обучать разработке (HTML5, CSS3, фронт энд, бэк энд, QA-тестирование, тимлидинг, IT-архитектура, etc.)</li>
-            <li>Мы планируем обучать не только с помощью текстов и видео, но и с помощью домашних заданий, задач, проектов</li>
-            <li>У нас можно будет пройти тесты и экзамены, чтобы получить серьёзный сертификат с серийным номером или чтобы подготовиться к сторонней сертификации (AWS, Cisco, etc.)</li>
-            <li>Успешные студенты смогут пройти учебную практику у нас, а также они смогут получить рекомендации на бумаге или в электронном виде</li>
-            <li>Мы поможем поднять уровень английского языка</li>
-            <li>Мы подскажем, как переехать в другую страну</li>
-            <li>Мы будем помогать в трудоустройстве, давая советы, как оформить резюме с портфолио, как найти вакансии с большой зарплатой и как подготовиться к собеседованию.</li>
-        </ul>
+        <div class="solve_ul">
+            <div>Мы будем специализироваться не на всём подряд, а мы будем обучать разработке (HTML5, CSS3, фронт энд, бэк энд, QA-тестирование, тимлидинг, IT-архитектура, etc.)</div>
+            <div>Мы планируем обучать не только с помощью текстов и видео, но и с помощью домашних заданий, задач, проектов</div>
+            <div>У нас можно будет пройти тесты и экзамены, чтобы получить серьёзный сертификат с серийным номером или чтобы подготовиться к сторонней сертификации (AWS, Cisco, etc.)</div>
+            <div>Успешные студенты смогут пройти учебную практику у нас, а также они смогут получить рекомендации на бумаге или в электронном виде</div>
+            <div>Мы поможем поднять уровень английского языка</div>
+            <div>Мы подскажем, как переехать в другую страну</div>
+            <div>Мы будем помогать в трудоустройстве, давая советы, как оформить резюме с портфолио, как найти вакансии с большой зарплатой и как подготовиться к собеседованию.</div>
+        </div>
 
         <div class="onOutProject">На нашем проекте вы сможете назначать желаемую цену и сроки обучения</div>
 
@@ -99,32 +115,39 @@
         <button class="begin">Начать!</button>
 
         <div class="teachText">Если вы хотите не учиться, а учить других людей, то мы сможем разместить ваш курс на нашем маркетплейсе.</div>
+        </div>
     </section>
     <section class="business_model">
+        <div class="container">
         <div class="business_model_text">
             Наш стартап стоит на стыке трёх технологий: EdTech, GameTech и HRTech. Не смотря на то, что многое на нашем сайте будет бесплатным, наша команда планирует разработку коммерческого проекта. В связи с этим, мы будем признательны пользователям за обратную связь и за заказы платных продуктов, например, начальная профессиональная ориентация, обучающие игровые курсы, помощь в трудоустройстве, а также многое другое, что вам нужно.
         </div>
-        <img src="" alt="" class="business_model_img">
+        <div class="business_model_img">
+            <img src="/img/business_model.svg" alt="" class="business_model_photo">
+        </div>
+        </div>
     </section>
     <section class="about_us_new" id="team">
+        <div class="container">
         <div class="headerAboutUs">Команда</div>
         <div class="involvedText">
             Члены нашей команды имеют отношение к обучению и к IT. Участники стартапа получили хорошее образование и имеют опыт разработки.
         </div>
         <div class="wrapperItems">
         <div class="newItem">
-            <a href="ru/team"><img src="/img/olegPhoto.png" alt="photo" class="personalPhoto"></a>
-            <a href="ru/team"><p class="nameOfUs">Олег Грибанов</p></a>
-            <a href="ru/team"><div class="specialityNew">Руководитель проекта</div></a>
+            <a href="/ru/team"><img src="/img/olegPhoto.png" alt="photo" class="personalPhoto"></a>
+            <a href="/ru/team"><p class="nameOfUs">Олег Грибанов</p></a>
+            <a href="/ru/team"><div class="specialityNew">Руководитель проекта</div></a>
         </div>
         <div class="newItem rightItem">
-            <a href="ru/team"><img src="/img/vitalyPhoto.jpg" alt="photo" class="personalPhoto"></a>
-            <a href="ru/team"><p class="nameOfUs">Виталий Гаршин</p></a>
-            <a href="ru/team"><div class="specialityNew">Разработчик</div></a>
+            <a href="/ru/team"><img src="/img/vitalyPhoto.jpg" alt="photo" class="personalPhoto"></a>
+            <a href="/ru/team"><p class="nameOfUs">Виталий Гаршин</p></a>
+            <a href="/ru/team"><div class="specialityNew">Разработчик</div></a>
         </div>
         </div>
         <div class="teamOpenText">
             Не смотря на то, что мы сами можем сделать всё необходимое, наша команда открыта для новых талантов, так как вместе мы сможем двигаться вперёд гораздо быстрее! Присоединяйтесь к быстро растущему стартапу!
+        </div>
         </div>
     </section>
     <footer id="contacts">
@@ -161,9 +184,9 @@
         </div>
         <div class="menu">
             <p class="menu_name">Меню</p>
-            <a href="ru"><i class="fas fa-home"></i> Главная</a>
-            <a href="ru#about"><i class="fas fa-project-diagram"></i> О проекте</a>
-            <a href="ru/team"><i class="fas fa-user-friends"></i> Команда</a>
+            <a href="/ru"><i class="fas fa-home"></i> Главная</a>
+            <a href="#about"><i class="fas fa-project-diagram"></i> О проекте</a>
+            <a href="/ru/team"><i class="fas fa-user-friends"></i> Команда</a>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/6bf4550111.js" crossorigin="anonymous"></script>

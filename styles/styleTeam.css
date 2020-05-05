@@ -1,0 +1,74 @@
+@media (max-width: 992px) {
+    .container {
+        max-width: 850px;
+    }
+}
+
+@media (max-width: 850px) {
+    .wrapper_text {
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    .personalPhoto {
+        width: 170px;
+        height: 170px;
+    }
+
+    .wrapper_photo .name {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .speciality {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .item {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 720px) {
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper_text {
+        margin-left: 0px;
+    }
+
+    .wrapper_photo {
+        margin-bottom: 15px;
+    }
+
+    .wrapper_photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .wrapper_text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .personalPhoto {
+        width: 150px;
+        height: 150px;
+    }
+
+    .wrapper_text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

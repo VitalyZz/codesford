@@ -30,6 +30,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/styleTeam.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>CodesFord</title>
 </head>
 <body>
@@ -41,16 +43,16 @@
             <ul class="menuUl">
                 <li><a href="/"><i class="fas fa-home"></i> Main page</a></li>
                 <li><a href="/#about"><i class="fas fa-project-diagram"></i> About project</a></li>
-                <li><a href="team"><i class="fas fa-user-friends"></i> Crew</a></li>
+                <li><a href="/team"><i class="fas fa-user-friends"></i> Crew</a></li>
                 <li><a href="/#contacts"><i class="fas fa-globe-asia"></i> Contacts</a></li>
             </ul>
         </div>
         <div class="language">
 
-            <!-- Begin -->
+            <!--Begin-->
 
         <select class="vodiapicker">
-            <option value="en" data-thumbnail="/img/icons/united_kingdom.ico">En</option>
+            <option value="en" data-thumbnail="/img/icons/united-kingdom.svg">En</option>
             <option value="ru" data-thumbnail="/img/icons/russia.svg">Ру</option>
         </select>
     
@@ -61,10 +63,25 @@
             </div>
         </div>
 
-            <!-- End -->
+        <div class="wrapper-burder-menu">
+            <div class="burger-line"></div>
+        </div>
+        <div class="burger-menu-display">
+            <div class="burger-link"><a href="/" class="burger-link-a"><i class="fas fa-home"></i> Main page</a></div>
+            <div class="burger-link"><a href="/#about" class="burger-link-a"><i class="fas fa-project-diagram"></i> About project</a></div>
+            <div class="burger-link"><a href="/team" class="burger-link-a"><i class="fas fa-user-friends"></i> Crew</a></div>
+            <div class="burger-link"><a href="/#contacts" class="burger-link-a"><i class="fas fa-globe-asia"></i> Contacts</a></div>
+            <div class="wrapper-close">
+                <div class="close-burger-menu-1"></div>
+                <div class="close-burger-menu-2"></div>
+            </div>
+        </div>
+
+            <!--End-->
         </div>
     </header>
     <section class="about_us" id="team">
+        <div class="container">
         <div class="item">
             <div class="wrapper_photo">
                 <img src="/img/olegPhoto.png" alt="photo" class="personalPhoto">
@@ -91,6 +108,7 @@
                     <p>I study at the 3rd year of the Lipetsk State Technical University, I make WEB sites using such technologies as: html, css (preprocessors sass and scss), javascript, php. I design databases, had experience working with such DBMS as MySQL, PostgreSQL and Microsoft SQL Server, also know how to work with git. I develop design layouts in Figma for WEB sites.</p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <footer id="contacts">

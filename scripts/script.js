@@ -65,7 +65,7 @@ let pathName = document.location.pathname;
 if (elFirst == 'Ру') {
   link = document.createElement('a');
   if (pathName.indexOf("team") !== -1) {
-    link.href = 'team';
+    link.href = '/ru/team';
   } else {
     link.href = '/ru';
   }
@@ -82,7 +82,7 @@ if (elFirst == 'Ру') {
 else {
   link = document.createElement('a');
   if (pathName.indexOf("team")  !== -1) {
-    link.href = 'team';
+    link.href = '/team';
   } else {
     link.href = '/';
   }
@@ -90,9 +90,9 @@ else {
 
   link2 = document.createElement('a');
   if (pathName.indexOf("team")  !== -1) {
-    link2.href = 'ru/team';
+    link2.href = '/ru/team';
   } else {
-    link2.href = 'ru';
+    link2.href = '/ru';
   }
   link2.appendChild(changeElement[1]);
 }
@@ -103,18 +103,22 @@ $('.btn-select').append('<img src="/img/icons/keyboard.svg" alt="youtube" class=
 
 
 document.querySelector('.wrapper-burder-menu').addEventListener('click', function() {
-  // document.querySelector('.burger-menu-display').style.display = 'block';
   document.querySelector('.burger-menu-display').style.left = 0;
+  // document.querySelector('.burger-menu-display').style.display = 'block';
+  document.body.style.overflow = 'hidden';
 });
 
 document.querySelector('.wrapper-close').addEventListener('click', function() {
-  // document.querySelector('.burger-menu-display').style.display = 'none';
   document.querySelector('.burger-menu-display').style.left = "100%";
+  // document.querySelector('.burger-menu-display').style.display = 'none';
+  document.body.style.overflow = 'auto';
 });
 
-document.querySelector('.burger-menu-display').addEventListener('click', function() {
+document.querySelector('.burger-menu-display').addEventListener('click', function(e) {
   if (e.target.tagName === 'A') {
-    // document.querySelector('.burger-menu-display').style.display = 'none';
     document.querySelector('.burger-menu-display').style.left = "100%";
+    // document.querySelector('.burger-menu-display').style.display = 'none';
+    document.body.style.overflow = 'auto';
   }
 });
+

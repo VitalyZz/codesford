@@ -30,6 +30,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/styleTeam.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>CodesFord</title>
 </head>
 <body>
@@ -39,19 +41,19 @@
         </div>
         <div class="listOfMenu">
             <ul class="menuUl">
-                <li><a href="/ru.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="/ru"><i class="fas fa-home"></i> Главная</a></li>
                 <li><a href="/ru#about"><i class="fas fa-project-diagram"></i> О проекте</a></li>
-                <li><a href="team.html"><i class="fas fa-user-friends"></i> Команда</a></li>
+                <li><a href="/ru/team"><i class="fas fa-user-friends"></i> Команда</a></li>
                 <li><a href="/ru#contacts"><i class="fas fa-globe-asia"></i> Контакты</a></li>
             </ul>
         </div>
         <div class="language">
 
-            <!-- Begin -->
+            <!--Begin-->
 
         <select class="vodiapicker">
             <option value="ru" data-thumbnail="/img/icons/russia.svg">Ру</option>
-            <option value="en" data-thumbnail="/img/icons/united_kingdom.ico">En</option>
+            <option value="en" data-thumbnail="/img/icons/united-kingdom.svg">En</option>
         </select>
     
         <div class="lang-select">
@@ -61,10 +63,25 @@
             </div>
         </div>
 
-            <!-- End -->
+        <div class="wrapper-burder-menu">
+            <div class="burger-line"></div>
+        </div>
+        <div class="burger-menu-display">
+            <div class="burger-link"><a href="/ru" class="burger-link-a"><i class="fas fa-home"></i> Главная</a></div>
+            <div class="burger-link"><a href="/ru#about" class="burger-link-a"><i class="fas fa-project-diagram"></i> О проекте</a></div>
+            <div class="burger-link"><a href="/ru/team" class="burger-link-a"><i class="fas fa-user-friends"></i> Команда</a></div>
+            <div class="burger-link"><a href="/ru#contacts" class="burger-link-a"><i class="fas fa-globe-asia"></i> Контакты</a></div>
+            <div class="wrapper-close">
+                <div class="close-burger-menu-1"></div>
+                <div class="close-burger-menu-2"></div>
+            </div>
+        </div>
+
+            <!--End-->
         </div>
     </header>
     <section class="about_us" id="team">
+        <div class="container">
         <div class="item">
             <div class="wrapper_photo">
                 <img src="/img/olegPhoto.png" alt="photo" class="personalPhoto">
@@ -100,6 +117,7 @@
                     <p>Обучаюсь на 3 курсе в Липецком государственном техническом университете, делаю WEB сайты используя такие технологии как: html, css (препроцессоры sass и scss), javascript, php. Проектирую базы данных, был опыт работы с такими СУБД как MySQL, PostgreSQL и РСУБД Microsoft SQL Server, также умею работать с git. Разрабатываю дизайн макеты в Figma для WEB сайтов.</p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <footer id="contacts">
